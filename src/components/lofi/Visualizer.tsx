@@ -1,8 +1,35 @@
-import React from 'react';
-import { useLofiStore } from '../../store/lofiStore';
+import React, { useEffect, useState } from 'react';
+import { useLofiStore, PRESETS } from '../../store/lofiStore';
 
 const Visualizer: React.FC = () => {
   const isPlaying = useLofiStore((state) => state.isPlaying);
+  const activePresetId = useLofiStore((state) => state.activePresetId);
+  const activePreset = PRESETS.find(p => p.id === activePresetId) || PRESETS[0];
+
+  const [currentImage, setCurrentImage] = useState(activePreset.backgroundImage);
+  const [nextImage, setNextImage] = useState<string | null>(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    if (activePreset.backgroundImage !== currentImage) {
+      // Defer state updates to avoid synchronous setState warning
+      const startTransition = setTimeout(() => {
+        setNextImage(activePreset.backgroundImage);
+        requestAnimationFrame(() => setIsTransitioning(true));
+      }, 10);
+
+      const endTransition = setTimeout(() => {
+        setCurrentImage(activePreset.backgroundImage);
+        setNextImage(null);
+        setIsTransitioning(false);
+      }, 1010); // 1000ms duration + 10ms delay
+
+      return () => {
+        clearTimeout(startTransition);
+        clearTimeout(endTransition);
+      };
+    }
+  }, [activePreset.backgroundImage, currentImage]);
 
   return (
     <div className="fixed inset-0 z-0 overflow-hidden bg-stone-950">
@@ -12,10 +39,18 @@ const Visualizer: React.FC = () => {
       {/* Dynamic Background Element - Pulses when playing */}
       <div className={`absolute inset-0 transition-transform duration-[8000ms] ease-in-out ${isPlaying ? 'scale-110' : 'scale-100'}`}>
          <img 
-            alt="Sunny afternoon interior with warm lighting" 
-            className={`w-full h-full object-cover object-center transition-all duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'}`}
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5PP_caerHclccMgPpCG9L0OJ6FJeq-dgqgiTJa5HRcA0uNfoui-KmhqCveye6rIkbgnn8Qc2HfEQ4kfa2K7sPI2d29uAF1zld8I_-vKueuV1YSZM_WyPwkgulOUQ6z18va11nZgIj0IdHrGGMgMbL6fZB8pqK4MfL_C6eX2pGpmYd1jOWxHuFDVSyC6LeW3h_HcNZ-2OyUuBql_BK4hBzBKdnesjS4cczB4nDxxhm23B9Sjo4rOGuUox7-sNpOiDilrJWUOvXKlc" 
+            alt="Background" 
+            className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'}`}
+            src={currentImage} 
           />
+          
+          {nextImage && (
+             <img 
+                alt="Transition Background" 
+                className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'} ${isTransitioning ? 'opacity-100' : 'opacity-0'}`}
+                src={nextImage} 
+              />
+          )}
       </div>
       
       {/* Overlay for depth */}

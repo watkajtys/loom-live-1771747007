@@ -1,90 +1,696 @@
-diff --git a/src/components/lofi/Navigation.tsx b/src/components/lofi/Navigation.tsx
-index fa353f6..4058680 100644
---- a/src/components/lofi/Navigation.tsx
-+++ b/src/components/lofi/Navigation.tsx
-@@ -1,16 +1,9 @@
- import React from 'react';
--import { Link } from 'react-router-dom';
- import { useLofiStore } from '../../store/lofiStore';
+diff --git a/package-lock.json b/package-lock.json
+index 778241e..7ac1a7b 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -79,7 +79,6 @@
+       "integrity": "sha512-CGOfOJqWjg2qW/Mb6zNsDm+u5vFQ8DxXfbM09z69p5Z6+mE1ikP2jUXw+j42Pf1XTYED2Rni5f95npYeuwMDQA==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "@babel/code-frame": "^7.29.0",
+         "@babel/generator": "^7.29.0",
+@@ -348,7 +347,6 @@
+       "resolved": "https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz",
+       "integrity": "sha512-xkGBRQQab4RLwgXxoqETICr6S5JlogafbhNsidmrkVv2YRs5MLwpjoF2qpiGjQt8S9AoxtIV603s0GIUpY5eYQ==",
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "@dnd-kit/accessibility": "^3.1.1",
+         "@dnd-kit/utilities": "^3.2.2",
+@@ -1279,7 +1277,6 @@
+       "integrity": "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "undici-types": "~7.16.0"
+       }
+@@ -1290,7 +1287,6 @@
+       "integrity": "sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==",
+       "devOptional": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "csstype": "^3.2.2"
+       }
+@@ -1350,7 +1346,6 @@
+       "integrity": "sha512-IgSWvLobTDOjnaxAfDTIHaECbkNlAlKv2j5SjpB2v7QHKv1FIfjwMy8FsDbVfDX/KjmCmYICcw7uGaXLhtsLNg==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "@typescript-eslint/scope-manager": "8.56.0",
+         "@typescript-eslint/types": "8.56.0",
+@@ -1615,7 +1610,6 @@
+       "integrity": "sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "bin": {
+         "acorn": "bin/acorn"
+       },
+@@ -1761,7 +1755,6 @@
+         }
+       ],
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "baseline-browser-mapping": "^2.9.0",
+         "caniuse-lite": "^1.0.30001759",
+@@ -1976,7 +1969,6 @@
+       "integrity": "sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "@eslint-community/eslint-utils": "^4.8.0",
+         "@eslint-community/regexpp": "^4.12.1",
+@@ -2948,7 +2940,6 @@
+       "integrity": "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "engines": {
+         "node": ">=12"
+       },
+@@ -2975,7 +2966,6 @@
+         }
+       ],
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "nanoid": "^3.3.11",
+         "picocolors": "^1.1.1",
+@@ -3017,7 +3007,6 @@
+       "resolved": "https://registry.npmjs.org/react/-/react-19.2.4.tgz",
+       "integrity": "sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==",
+       "license": "MIT",
+-      "peer": true,
+       "engines": {
+         "node": ">=0.10.0"
+       }
+@@ -3027,7 +3016,6 @@
+       "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.4.tgz",
+       "integrity": "sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==",
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "scheduler": "^0.27.0"
+       },
+@@ -3286,7 +3274,6 @@
+       "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+       "dev": true,
+       "license": "Apache-2.0",
+-      "peer": true,
+       "bin": {
+         "tsc": "bin/tsc",
+         "tsserver": "bin/tsserver"
+@@ -3373,7 +3360,6 @@
+       "integrity": "sha512-RHX7IvsJlEfjyA1rS7MY0UsmF91etdLAamslHR5lfuO3W/BXRdXm2tRE64ztpSPZbKqB4wAAZ0AwtF6QzfKZLA==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "dependencies": {
+         "@oxc-project/runtime": "0.114.0",
+         "lightningcss": "^1.31.1",
+@@ -3499,7 +3485,6 @@
+       "integrity": "sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==",
+       "dev": true,
+       "license": "MIT",
+-      "peer": true,
+       "funding": {
+         "url": "https://github.com/sponsors/colinhacks"
+       }
+diff --git a/src/components/lofi/MixLibrary.tsx b/src/components/lofi/MixLibrary.tsx
+new file mode 100644
+index 0000000..8fdadfd
+--- /dev/null
++++ b/src/components/lofi/MixLibrary.tsx
+@@ -0,0 +1,111 @@
++import React from 'react';
++import { useLofiStore, PRESETS } from '../../store/lofiStore';
++
++interface MixLibraryProps {
++  isOpen: boolean;
++  onClose: () => void;
++}
++
++const MixLibrary: React.FC<MixLibraryProps> = ({ isOpen, onClose }) => {
++  const activePresetId = useLofiStore((state) => state.activePresetId);
++  const setActivePreset = useLofiStore((state) => state.setActivePreset);
++
++  if (!isOpen) return null;
++
++  return (
++    <div className="fixed inset-0 z-50 bg-stone-950/60 backdrop-blur-xl flex items-center justify-center p-4">
++      <div className="modal-glass w-full max-w-5xl rounded-3xl flex flex-col overflow-hidden max-h-[90vh] shadow-2xl ring-1 ring-white/10 animate-in fade-in zoom-in duration-300">
++        
++        {/* Header */}
++        <div className="flex items-center justify-between px-8 py-6 border-b border-stone-800/50 bg-stone-900/40">
++          <div className="flex items-center gap-3">
++            <span className="material-symbols-outlined text-amber-400">library_music</span>
++            <h2 className="text-2xl font-bold text-stone-50 tracking-tight">Soundscape Library</h2>
++          </div>
++          <button 
++            onClick={onClose}
++            className="text-stone-400 hover:text-stone-50 transition-colors p-2 rounded-full hover:bg-stone-800/50"
++          >
++            <span className="material-symbols-outlined">close</span>
++          </button>
++        </div>
++
++        {/* Content */}
++        <div className="flex-1 overflow-y-auto p-8 custom-scrollbar">
++          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
++            {PRESETS.map((preset) => {
++              const isActive = activePresetId === preset.id;
++              const trackCount = Object.values(preset.stems).filter(v => v > 0).length;
++
++              return (
++                <div 
++                  key={preset.id}
++                  onClick={() => {
++                    setActivePreset(preset.id);
++                    onClose();
++                  }}
++                  className={`group relative rounded-xl overflow-hidden cursor-pointer transition-all hover:-translate-y-1 ${
++                    isActive 
++                      ? 'bg-stone-800/40 border-2 border-amber-400 shadow-[0_0_20px_rgba(251,191,36,0.15)]' 
++                      : 'bg-stone-800/30 border border-stone-700/50 hover:border-stone-600 hover:bg-stone-800/50'
++                  }`}
++                >
++                  {isActive && (
++                    <div className="absolute top-3 right-3 z-10">
++                      <span className="bg-amber-400 text-stone-950 text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1 shadow-lg">
++                        <span className="material-symbols-outlined text-[14px]">check_circle</span>
++                        Active
++                      </span>
++                    </div>
++                  )}
++
++                  <div className="h-40 w-full overflow-hidden relative">
++                    {!isActive && (
++                        <div className="absolute inset-0 bg-indigo-900/20 mix-blend-overlay"></div>
++                    )}
++                    <img 
++                      alt={preset.title} 
++                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${isActive ? 'sepia-[.2]' : 'saturate-150'}`}
++                      src={preset.thumbnail}
++                    />
++                  </div>
++
++                  <div className="p-5">
++                    <div className="flex justify-between items-start mb-2">
++                      <h3 className="text-lg font-bold text-stone-50">{preset.title}</h3>
++                      <span className={`${isActive ? 'text-amber-400' : 'text-stone-500'} font-nums text-sm font-medium`}>
++                        {trackCount} Tracks
++                      </span>
++                    </div>
++                    <p className="text-stone-400 text-sm leading-relaxed">{preset.description}</p>
++                    <div className="mt-4 flex gap-2">
++                      {preset.tags.map(tag => (
++                        <span key={tag} className="text-[10px] uppercase font-bold tracking-wider text-stone-500 bg-stone-900/50 px-2 py-1 rounded">
++                          {tag}
++                        </span>
++                      ))}
++                    </div>
++                  </div>
++                </div>
++              );
++            })}
++          </div>
++        </div>
++
++        {/* Footer */}
++        <div className="p-6 border-t border-stone-800/50 bg-stone-900/40 flex justify-center">
++          <button 
++            onClick={onClose}
++            className="bg-stone-800 hover:bg-stone-700 text-stone-200 font-semibold py-3 px-8 rounded-full transition-colors duration-200 flex items-center gap-2 border border-stone-700"
++          >
++            <span className="material-symbols-outlined text-lg">expand_more</span>
++            Close Library
++          </button>
++        </div>
++
++      </div>
++    </div>
++  );
++};
++
++export default MixLibrary;
+diff --git a/src/components/lofi/MixerBoard.tsx b/src/components/lofi/MixerBoard.tsx
+index 0d8f91d..56b5739 100644
+--- a/src/components/lofi/MixerBoard.tsx
++++ b/src/components/lofi/MixerBoard.tsx
+@@ -1,80 +1,91 @@
+-import React from 'react';
+-import { useLofiStore } from '../../store/lofiStore';
++import React, { useState } from 'react';
++import { useLofiStore, PRESETS } from '../../store/lofiStore';
++import MixLibrary from './MixLibrary';
  
- const Navigation: React.FC = () => {
--  const timer = useLofiStore((state) => state.timer);
-+  const initialTimer = useLofiStore((state) => state.initialTimer);
-   
--  const formatTime = (seconds: number) => {
--    const m = Math.floor(seconds / 60);
--    const s = seconds % 60;
--    return `${m}:${s.toString().padStart(2, '0')}`;
--  };
--
+ const MixerBoard: React.FC = () => {
+   const audioStems = useLofiStore((state) => state.audioStems);
+   const setVolume = useLofiStore((state) => state.setVolume);
++  const activePresetId = useLofiStore((state) => state.activePresetId);
++  const [isLibraryOpen, setIsLibraryOpen] = useState(false);
++
++  const activePreset = PRESETS.find(p => p.id === activePresetId) || PRESETS[0];
+ 
    return (
-     <nav className="fixed top-0 left-0 right-0 z-50 h-16 flex items-center justify-between px-8 bg-gradient-to-b from-black/50 to-transparent pointer-events-none">
-       <div className="flex items-center gap-3 pointer-events-auto">
-@@ -18,12 +11,9 @@ const Navigation: React.FC = () => {
-         <span className="text-amber-50 font-bold text-lg tracking-wide uppercase drop-shadow-md font-display">LofiLoom</span>
-       </div>
-       <div className="flex items-center gap-6 pointer-events-auto">
--        <Link to="/legacy" className="text-amber-100/60 hover:text-amber-50 text-sm font-medium transition-colors font-display">
--            Legacy App
--        </Link>
-         <div className="hidden md:flex items-center gap-2 text-amber-100/80 text-xs font-medium bg-amber-950/30 px-4 py-2 rounded-full border border-amber-500/20 backdrop-blur-md">
-           <span className="material-symbols-outlined text-primary text-base">timer</span>
--          <span className="font-numeric tabular-nums">{formatTime(timer)}</span>
-+          <span className="font-display">Session: <span className="font-numeric">{Math.floor(initialTimer / 60)}m</span></span>
+-    <div className="fixed bottom-0 left-0 right-0 z-40 glass-panel-deep px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-8 h-auto md:h-28 shadow-2xl">
+-      <div className="hidden md:flex items-center gap-4 w-64 shrink-0">
+-        <div className="relative size-14 rounded-lg overflow-hidden bg-amber-900/20 shadow-inner group cursor-pointer border border-amber-500/20">
+-          <img 
+-            alt="Album art" 
+-            className="object-cover w-full h-full opacity-90 group-hover:opacity-100 transition-opacity sepia-[.3]" 
+-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gvKgX5ZCwKa8RJBtFhlK4uG6GSCPyTKZy9LWI01zOZpSAz-ShnRB34fDaXCy7NPOz9ZTFR59o-Xb_OPmXcCgtFFWJnzBEUhHB9gH9pMLdwIW0vrS6ZWiF8LvYqUuNspbWEA1as9TSNevPgf7ksWxpmhISsBiox0EkYzlbPAsbf0BTep91I8quRuuTfeGZorrCdwzBvBOR5mqQMByXaj_Zjh_SXPKR6azHG5dckqYPE4ZmBgoS4wJE5JmTs_6fSYqS8s05eBJ3FA"
+-          />
+-          <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+-            <span className="material-symbols-outlined text-white text-xl">open_in_full</span>
++    <>
++      <MixLibrary isOpen={isLibraryOpen} onClose={() => setIsLibraryOpen(false)} />
++      <div className="fixed bottom-0 left-0 right-0 z-40 glass-panel-deep px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-8 h-auto md:h-28 shadow-2xl">
++        <div className="hidden md:flex items-center gap-4 w-64 shrink-0">
++          <div 
++            onClick={() => setIsLibraryOpen(true)}
++            className="relative size-14 rounded-lg overflow-hidden bg-amber-900/20 shadow-inner group cursor-pointer border border-amber-500/20"
++          >
++            <img 
++              alt={activePreset.title} 
++              className="object-cover w-full h-full opacity-90 group-hover:opacity-100 transition-opacity sepia-[.3]" 
++              src={activePreset.thumbnail}
++            />
++            <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
++              <span className="material-symbols-outlined text-white text-xl">open_in_full</span>
++            </div>
++          </div>
++          <div className="flex flex-col">
++            <h3 className="text-amber-50 text-sm font-bold leading-tight font-display">{activePreset.title}</h3>
++            <p className="text-xs text-primary/80 mt-1 font-medium font-display line-clamp-1">{activePreset.tags[0]} Vibes</p>
+           </div>
          </div>
-         <div className="flex items-center gap-3 cursor-pointer group">
-           <div className="size-8 rounded-full border border-amber-200/30 overflow-hidden shadow-[0_0_10px_rgba(255,160,0,0.3)]">
-diff --git a/src/index.css b/src/index.css
-index 9eec452..8ce6e47 100644
---- a/src/index.css
-+++ b/src/index.css
-@@ -9,7 +9,8 @@
-   --color-panel-bg: #0a0a12;
-   --color-panel-border: #1a1a2e;
+-        <div className="flex flex-col">
+-          <h3 className="text-amber-50 text-sm font-bold leading-tight font-display">Golden Hour Mix</h3>
+-          <p className="text-xs text-primary/80 mt-1 font-medium font-display">Warm Vibes</p>
+-        </div>
+-      </div>
+-      
+-      <div className="flex-1 w-full flex items-center justify-center gap-4 md:gap-8 overflow-x-auto pb-2 md:pb-0 px-4 scrollbar-hide">
+-        {audioStems.map((stem) => {
+-           // Helper to determine colors based on accentColor class string
+-           const iconColor = stem.accentColor
+-             .replace('accent-', 'text-')
+-             .replace('-400', '-300')
+-             .replace('-300', '-200');
+-             
+-           const textColor = stem.accentColor
+-             .replace('accent-', 'text-')
+-             .replace('-400', '-100')
+-             .replace('-300', '-100');
++        
++        <div className="flex-1 w-full flex items-center justify-center gap-4 md:gap-8 overflow-x-auto pb-2 md:pb-0 px-4 scrollbar-hide">
++          {audioStems.map((stem) => {
++             // Helper to determine colors based on accentColor class string
++             const iconColor = stem.accentColor
++               .replace('accent-', 'text-')
++               .replace('-400', '-300')
++               .replace('-300', '-200');
++               
++             const textColor = stem.accentColor
++               .replace('accent-', 'text-')
++               .replace('-400', '-100')
++               .replace('-300', '-100');
  
--  --font-display: "Rajdhani", sans-serif;
-+  --font-display: "DM Sans", sans-serif;
-+  --font-numeric: "Outfit", sans-serif;
-   --font-mono: "Space Mono", monospace;
+-           return (
+-            <div key={stem.id} className="flex flex-col items-center gap-2 min-w-[80px] group">
+-              <div className={`flex items-center gap-2 mb-1 opacity-60 group-hover:opacity-100 transition-opacity`}>
+-                <span className={`material-symbols-outlined text-lg ${iconColor}`}>{stem.icon}</span>
+-                <span className={`text-[10px] uppercase tracking-wider font-bold ${textColor}`}>{stem.name}</span>
++             return (
++              <div key={stem.id} className="flex flex-col items-center gap-2 min-w-[80px] group">
++                <div className={`flex items-center gap-2 mb-1 opacity-60 group-hover:opacity-100 transition-opacity`}>
++                  <span className={`material-symbols-outlined text-lg ${iconColor}`}>{stem.icon}</span>
++                  <span className={`text-[10px] uppercase tracking-wider font-bold ${textColor}`}>{stem.name}</span>
++                </div>
++                <input 
++                  type="range" 
++                  min="0" 
++                  max="100" 
++                  value={stem.volume} 
++                  onChange={(e) => setVolume(stem.id, parseInt(e.target.value))}
++                  className={`w-32 h-1 bg-amber-900/30 rounded-lg appearance-none cursor-pointer hover:bg-amber-900/50 transition-colors ${stem.accentColor}`}
++                />
+               </div>
+-              <input 
+-                type="range" 
+-                min="0" 
+-                max="100" 
+-                value={stem.volume} 
+-                onChange={(e) => setVolume(stem.id, parseInt(e.target.value))}
+-                className={`w-32 h-1 bg-amber-900/30 rounded-lg appearance-none cursor-pointer hover:bg-amber-900/50 transition-colors ${stem.accentColor}`}
+-              />
+-            </div>
+-          );
+-        })}
+-      </div>
++            );
++          })}
++        </div>
  
-   --background-image-cyber-grid: linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+-      <div className="flex items-center gap-4 w-64 justify-end shrink-0 border-l border-amber-500/10 pl-6 h-12">
+-        <button className="text-amber-200/50 hover:text-amber-100 transition-colors">
+-          <span className="material-symbols-outlined">tune</span>
+-        </button>
+-        <div className="flex items-center gap-2 group">
+-          <span className="material-symbols-outlined text-amber-200/50 group-hover:text-amber-100 text-xl">volume_up</span>
+-          <input 
+-            type="range" 
+-            min="0" 
+-            max="100" 
+-            defaultValue="80"
+-            className="w-20 h-1 bg-amber-900/30 rounded-lg appearance-none cursor-pointer accent-amber-100" 
+-          />
++        <div className="flex items-center gap-4 w-64 justify-end shrink-0 border-l border-amber-500/10 pl-6 h-12">
++          <button className="text-amber-200/50 hover:text-amber-100 transition-colors">
++            <span className="material-symbols-outlined">tune</span>
++          </button>
++          <div className="flex items-center gap-2 group">
++            <span className="material-symbols-outlined text-amber-200/50 group-hover:text-amber-100 text-xl">volume_up</span>
++            <input 
++              type="range" 
++              min="0" 
++              max="100" 
++              defaultValue="80"
++              className="w-20 h-1 bg-amber-900/30 rounded-lg appearance-none cursor-pointer accent-amber-100" 
++            />
++          </div>
++          <button className="text-amber-200/50 hover:text-amber-100 transition-colors ml-2">
++            <span className="material-symbols-outlined">fullscreen</span>
++          </button>
+         </div>
+-        <button className="text-amber-200/50 hover:text-amber-100 transition-colors ml-2">
+-          <span className="material-symbols-outlined">fullscreen</span>
+-        </button>
+       </div>
+-    </div>
++    </>
+   );
+ };
+ 
+diff --git a/src/components/lofi/Visualizer.tsx b/src/components/lofi/Visualizer.tsx
+index ad276c7..a387a49 100644
+--- a/src/components/lofi/Visualizer.tsx
++++ b/src/components/lofi/Visualizer.tsx
+@@ -1,8 +1,35 @@
+-import React from 'react';
+-import { useLofiStore } from '../../store/lofiStore';
++import React, { useEffect, useState } from 'react';
++import { useLofiStore, PRESETS } from '../../store/lofiStore';
+ 
+ const Visualizer: React.FC = () => {
+   const isPlaying = useLofiStore((state) => state.isPlaying);
++  const activePresetId = useLofiStore((state) => state.activePresetId);
++  const activePreset = PRESETS.find(p => p.id === activePresetId) || PRESETS[0];
++
++  const [currentImage, setCurrentImage] = useState(activePreset.backgroundImage);
++  const [nextImage, setNextImage] = useState<string | null>(null);
++  const [isTransitioning, setIsTransitioning] = useState(false);
++
++  useEffect(() => {
++    if (activePreset.backgroundImage !== currentImage) {
++      // Defer state updates to avoid synchronous setState warning
++      const startTransition = setTimeout(() => {
++        setNextImage(activePreset.backgroundImage);
++        requestAnimationFrame(() => setIsTransitioning(true));
++      }, 10);
++
++      const endTransition = setTimeout(() => {
++        setCurrentImage(activePreset.backgroundImage);
++        setNextImage(null);
++        setIsTransitioning(false);
++      }, 1010); // 1000ms duration + 10ms delay
++
++      return () => {
++        clearTimeout(startTransition);
++        clearTimeout(endTransition);
++      };
++    }
++  }, [activePreset.backgroundImage, currentImage]);
+ 
+   return (
+     <div className="fixed inset-0 z-0 overflow-hidden bg-stone-950">
+@@ -12,10 +39,18 @@ const Visualizer: React.FC = () => {
+       {/* Dynamic Background Element - Pulses when playing */}
+       <div className={`absolute inset-0 transition-transform duration-[8000ms] ease-in-out ${isPlaying ? 'scale-110' : 'scale-100'}`}>
+          <img 
+-            alt="Sunny afternoon interior with warm lighting" 
+-            className={`w-full h-full object-cover object-center transition-all duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'}`}
+-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5PP_caerHclccMgPpCG9L0OJ6FJeq-dgqgiTJa5HRcA0uNfoui-KmhqCveye6rIkbgnn8Qc2HfEQ4kfa2K7sPI2d29uAF1zld8I_-vKueuV1YSZM_WyPwkgulOUQ6z18va11nZgIj0IdHrGGMgMbL6fZB8pqK4MfL_C6eX2pGpmYd1jOWxHuFDVSyC6LeW3h_HcNZ-2OyUuBql_BK4hBzBKdnesjS4cczB4nDxxhm23B9Sjo4rOGuUox7-sNpOiDilrJWUOvXKlc" 
++            alt="Background" 
++            className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'}`}
++            src={currentImage} 
+           />
++          
++          {nextImage && (
++             <img 
++                alt="Transition Background" 
++                className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${isPlaying ? 'animate-breathe brightness-110' : 'brightness-75 grayscale-[0.2]'} ${isTransitioning ? 'opacity-100' : 'opacity-0'}`}
++                src={nextImage} 
++              />
++          )}
+       </div>
+       
+       {/* Overlay for depth */}
 diff --git a/src/store/lofiStore.ts b/src/store/lofiStore.ts
-index ef16569..0a3e2bb 100644
+index 0a3e2bb..8feb7d1 100644
 --- a/src/store/lofiStore.ts
 +++ b/src/store/lofiStore.ts
-@@ -57,7 +57,7 @@ export const useLofiStore = create<LofiState>((set) => ({
-       muted: false, 
-       src: 'https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg',
-       icon: 'storefront', 
--      accentColor: 'accent-orange-400' 
-+      accentColor: 'accent-orange-300' 
-     },
-     { 
-       id: 'fire', 
-@@ -66,7 +66,7 @@ export const useLofiStore = create<LofiState>((set) => ({
-       muted: false, 
-       src: 'https://actions.google.com/sounds/v1/ambiences/fireplace.ogg',
-       icon: 'local_fire_department', 
--      accentColor: 'accent-red-400' 
-+      accentColor: 'accent-amber-500' 
-     },
-     { 
-       id: 'vinyl', 
-@@ -75,7 +75,7 @@ export const useLofiStore = create<LofiState>((set) => ({
-       muted: false, 
-       src: 'https://actions.google.com/sounds/v1/water/waves_crashing_on_rocks_1.ogg',
-       icon: 'album', 
--      accentColor: 'accent-yellow-300' 
-+      accentColor: 'accent-amber-400' 
-     },
-     { 
-       id: 'nature', 
-@@ -84,7 +84,7 @@ export const useLofiStore = create<LofiState>((set) => ({
-       muted: false, 
-       src: 'https://actions.google.com/sounds/v1/animals/birds_forest.ogg',
-       icon: 'forest', 
--      accentColor: 'accent-lime-400' 
-+      accentColor: 'accent-orange-300' 
-     },
-   ],
+@@ -12,12 +12,116 @@ export interface AudioStem {
+   accentColor: string; // Tailwind color class for slider accent
+ }
  
++export interface Preset {
++  id: string;
++  title: string;
++  description: string;
++  backgroundImage: string;
++  thumbnail: string;
++  stems: Record<string, number>;
++  tags: string[];
++}
++
++export const PRESETS: Preset[] = [
++  {
++    id: 'golden-hour',
++    title: 'Golden Hour Mix',
++    description: 'Warm sunset vibes with crackling fire and soft piano.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyFjrpVRJrDyaKtFEmxJnvq4OeTAnBicoZTjZuAy3u6hIbJS3RNIauio6AfecjqvsKM-p2bUk42ytuj8YA-JHmmC4tZRdAzuUkNJ7YCf5WEZd267AABWAe50ADaklZ2hKOZUkvBYN-TK2UjOi_CPktK0etQeyY6icwDIjfFhlZ6oLA9ORXUcaLwFbglFTp1YcA8fkXZd2eqOsHqM75KVEMst8x78BT3aPW2dNAeWaRku4VR2Ier1Zt-OUWd_TpBLaTXpZKyQ05RE',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyFjrpVRJrDyaKtFEmxJnvq4OeTAnBicoZTjZuAy3u6hIbJS3RNIauio6AfecjqvsKM-p2bUk42ytuj8YA-JHmmC4tZRdAzuUkNJ7YCf5WEZd267AABWAe50ADaklZ2hKOZUkvBYN-TK2UjOi_CPktK0etQeyY6icwDIjfFhlZ6oLA9ORXUcaLwFbglFTp1YcA8fkXZd2eqOsHqM75KVEMst8x78BT3aPW2dNAeWaRku4VR2Ier1Zt-OUWd_TpBLaTXpZKyQ05RE',
++    stems: {
++      fire: 70,
++      vinyl: 50,
++      nature: 30,
++      rain: 0,
++      cafe: 0
++    },
++    tags: ['Warm', 'Relax']
++  },
++  {
++    id: 'neon-rain',
++    title: 'Neon Rain',
++    description: 'Cyberpunk city ambiance with heavy rain and distant sirens.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBcdU6jCTXjfGGkQKXdT5SGZr8rX96O7n8EhE3YSl8kWP8N8d27rk3lB8a7Hug9l8cDdg6GNYbkLr372iYxEv18pxuqRHqyL4lEPiV1it8lgqN2wgb4Gw-6j8SMcGdou0tXPBQLPqqzEYmcetW_XDoFONqirZkuHntn5YI_SY0ElKOR5x7lIhBjSN4A71WU21HIReRMrO8SjkLTZ3m-fwLbbHir06A1mc2EfH0OPVEZXIVxiZIF2V3J-E4qgH3Atyx0a230iJbUrus',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBcdU6jCTXjfGGkQKXdT5SGZr8rX96O7n8EhE3YSl8kWP8N8d27rk3lB8a7Hug9l8cDdg6GNYbkLr372iYxEv18pxuqRHqyL4lEPiV1it8lgqN2wgb4Gw-6j8SMcGdou0tXPBQLPqqzEYmcetW_XDoFONqirZkuHntn5YI_SY0ElKOR5x7lIhBjSN4A71WU21HIReRMrO8SjkLTZ3m-fwLbbHir06A1mc2EfH0OPVEZXIVxiZIF2V3J-E4qgH3Atyx0a230iJbUrus',
++    stems: {
++      rain: 80,
++      cafe: 20,
++      vinyl: 40,
++      fire: 0,
++      nature: 0
++    },
++    tags: ['Focus', 'Rain']
++  },
++  {
++    id: 'library-corner',
++    title: 'Library Corner',
++    description: 'Old books scent, turning pages, and quiet whispers.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0t9eJNm2983hHNLLPz_Lcr3RR3qdxxCdIbF1YEesdkkunwsDYG9FkR1PqYiUp3TdIafE7lyt4YvUk4UQdI5pW4EynbEySr1HN7jhi3i2hpqINQCrmkuCxd-5dHfk2tsnOigyICYMCMn3TfL7r5xd0qtbu-B18rYPdefRlBT_MTJcKM3MrDWc6MS8CTqnUDcfecVXkvXrmoHoQbXkc8jnRpHc_4Tf2PF2zY7SAMGoyhxi9MytyUgdS7E9EsvEYjwenU0wZV0mzlFI',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0t9eJNm2983hHNLLPz_Lcr3RR3qdxxCdIbF1YEesdkkunwsDYG9FkR1PqYiUp3TdIafE7lyt4YvUk4UQdI5pW4EynbEySr1HN7jhi3i2hpqINQCrmkuCxd-5dHfk2tsnOigyICYMCMn3TfL7r5xd0qtbu-B18rYPdefRlBT_MTJcKM3MrDWc6MS8CTqnUDcfecVXkvXrmoHoQbXkc8jnRpHc_4Tf2PF2zY7SAMGoyhxi9MytyUgdS7E9EsvEYjwenU0wZV0mzlFI',
++    stems: {
++      cafe: 30,
++      vinyl: 40,
++      rain: 10,
++      fire: 20,
++      nature: 0
++    },
++    tags: ['Study', 'Quiet']
++  },
++    {
++    id: 'deep-space',
++    title: 'Deep Space',
++    description: 'Ethereal drones and white noise for deep concentration.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuACMqKiJ5KJQHu0bZiMJnH5f749vjHELHXpF5-Z1MYlJG0rx6HJwtSsZ1c1TxhtsxulFa4hynYe_C2qQtDgSMscyRWWKCS7zVULjjGG4d7k3nMFC8MNdMfaMSicbuXiAHmYUTIxkNgU9fPa6ea4KzhFII35jtcPII9BqTjMZYN3JchaGU0uwU6V2q6tG5NK3W6UpX6CL6zhZzXjddJaIn0SYWY-G_egI5vn1zOt8fVDVNECjIW87KZolO_hrU495lIEGlj5d048ObE',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuACMqKiJ5KJQHu0bZiMJnH5f749vjHELHXpF5-Z1MYlJG0rx6HJwtSsZ1c1TxhtsxulFa4hynYe_C2qQtDgSMscyRWWKCS7zVULjjGG4d7k3nMFC8MNdMfaMSicbuXiAHmYUTIxkNgU9fPa6ea4KzhFII35jtcPII9BqTjMZYN3JchaGU0uwU6V2q6tG5NK3W6UpX6CL6zhZzXjddJaIn0SYWY-G_egI5vn1zOt8fVDVNECjIW87KZolO_hrU495lIEGlj5d048ObE',
++    stems: {
++      rain: 30,
++      vinyl: 60,
++      nature: 0,
++      cafe: 0,
++      fire: 0
++    },
++    tags: ['Deep', 'Space']
++  },
++  {
++    id: 'coffee-shop',
++    title: 'Coffee Shop',
++    description: 'Espresso machine hiss, clinking cups, and chatter.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCjmjIJm-yVdkCFHcUezyZuDfVDJb-rdRAJkkMS8Sr3g5scvZVjOorp3V7qEO93taMdTpzOEI_ECzP-GFW5tUPYKmUAbfdFWVF3OODP3PWeSUm4tR4ROjejKznpyZeLCLxJKT376efln7LbCMtCx0iUtfDrSAnMcLWkEAd9mT91KXHFWwGiUeR2BbikK_o47A9h7a--1fxcbWPMUAK8_1SSf3BaKjalGnZase69Thf766xcATErCYzanPqYtC4Q-d-ENQsy-uBgwJ4',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCjmjIJm-yVdkCFHcUezyZuDfVDJb-rdRAJkkMS8Sr3g5scvZVjOorp3V7qEO93taMdTpzOEI_ECzP-GFW5tUPYKmUAbfdFWVF3OODP3PWeSUm4tR4ROjejKznpyZeLCLxJKT376efln7LbCMtCx0iUtfDrSAnMcLWkEAd9mT91KXHFWwGiUeR2BbikK_o47A9h7a--1fxcbWPMUAK8_1SSf3BaKjalGnZase69Thf766xcATErCYzanPqYtC4Q-d-ENQsy-uBgwJ4',
++    stems: {
++      cafe: 85,
++      vinyl: 20,
++      rain: 10,
++      fire: 0,
++      nature: 0
++    },
++    tags: ['Social', 'Cafe']
++  },
++  {
++    id: 'forest-cabin',
++    title: 'Forest Cabin',
++    description: 'Wind in trees, bird calls, and a crackling wood stove.',
++    backgroundImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-2Yj9TeHpY0tZpFEKf1PA-dQro-srOE8osxEqCidbawkM_Z1IjrlV3wtkDhfH1dZEmUQajOzFA3X0Knf-LSQ7hU-f3zdbUEqkYQb-vkYWXGx-91yhY5WeGFNNzF1W26J6wNtLrPwmZPOe8zm3Kr3j3riW0IoxaNLh0RyL59tO15zydD6YZI0X9b-GpVUebWvc3lu8Vo3Mso3OXPNE7E9XfffWKIwCrhGZEjt7bj3OuscG8_Qrih9k_mNsbIfqHt7qZHX9an84NqE',
++    thumbnail: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-2Yj9TeHpY0tZpFEKf1PA-dQro-srOE8osxEqCidbawkM_Z1IjrlV3wtkDhfH1dZEmUQajOzFA3X0Knf-LSQ7hU-f3zdbUEqkYQb-vkYWXGx-91yhY5WeGFNNzF1W26J6wNtLrPwmZPOe8zm3Kr3j3riW0IoxaNLh0RyL59tO15zydD6YZI0X9b-GpVUebWvc3lu8Vo3Mso3OXPNE7E9XfffWKIwCrhGZEjt7bj3OuscG8_Qrih9k_mNsbIfqHt7qZHX9an84NqE',
++    stems: {
++      nature: 80,
++      fire: 60,
++      rain: 10,
++      cafe: 0,
++      vinyl: 0
++    },
++    tags: ['Nature', 'Peace']
++  }
++];
++
+ interface LofiState {
+   isPlaying: boolean;
+   timer: number;
+   initialTimer: number;
+   activeSession: SessionType;
+   audioStems: AudioStem[];
++  activePresetId: string;
+ 
+   togglePlay: () => void;
+   setPlay: (isPlaying: boolean) => void;
+@@ -27,6 +131,7 @@ interface LofiState {
+   toggleMute: (id: string) => void;
+   resetTimer: () => void;
+   tickTimer: () => void;
++  setActivePreset: (id: string) => void;
+ }
+ 
+ export const SESSION_TIMES: Record<SessionType, number> = {
+@@ -40,6 +145,7 @@ export const useLofiStore = create<LofiState>((set) => ({
+   activeSession: 'focus',
+   timer: SESSION_TIMES.focus,
+   initialTimer: SESSION_TIMES.focus,
++  activePresetId: 'golden-hour',
+   audioStems: [
+     { 
+       id: 'rain', 
+@@ -120,4 +226,17 @@ export const useLofiStore = create<LofiState>((set) => ({
+       return { isPlaying: false, timer: 0 };
+     }
+   }),
++
++  setActivePreset: (id) => {
++    const preset = PRESETS.find((p) => p.id === id);
++    if (!preset) return;
++
++    set((state) => ({
++      activePresetId: id,
++      audioStems: state.audioStems.map((stem) => ({
++        ...stem,
++        volume: preset.stems[stem.id] ?? 0,
++      })),
++    }));
++  },
+ }));
+diff --git a/verify_library.py b/verify_library.py
+new file mode 100644
+index 0000000..0a9653b
+--- /dev/null
++++ b/verify_library.py
+@@ -0,0 +1,70 @@
++import time
++from playwright.sync_api import sync_playwright
++
++def verify_mix_library():
++    with sync_playwright() as p:
++        browser = p.chromium.launch(headless=True)
++        context = browser.new_context(viewport={'width': 1280, 'height': 800})
++        page = context.new_page()
++
++        # 1. Load the page
++        print("Loading page...")
++        page.goto("http://localhost:5173")
++        
++        # Wait for the app to load
++        page.wait_for_selector("text=LofiLoom")
++        print("Page loaded.")
++        time.sleep(2) # Allow animations to settle
++
++        # 2. Check initial state (Golden Hour Mix)
++        print("Checking initial state...")
++        initial_title = page.locator("h3").filter(has_text="Golden Hour Mix").first
++        if initial_title.is_visible():
++            print("Initial mix title found.")
++        else:
++            print("Initial mix title NOT found.")
++
++        # 3. Open Library
++        print("Opening Library...")
++        # Target the container of the album art.
++        # Find the image, then get the parent.
++        album_art_container = page.locator("img[alt='Golden Hour Mix']").locator("xpath=..")
++        album_art_container.click()
++        
++        # Wait for library to open
++        library_header = page.locator("h2").filter(has_text="Soundscape Library")
++        library_header.wait_for(state="visible")
++        print("Library opened.")
++        time.sleep(1) # Wait for fade in
++
++        # 4. Take screenshot of Library
++        print("Taking library screenshot...")
++        page.screenshot(path="verification_library.png")
++
++        # 5. Select "Neon Rain"
++        print("Selecting 'Neon Rain'...")
++        # Locate the card for Neon Rain.
++        neon_rain_card = page.locator("div").filter(has_text="Neon Rain").last
++        neon_rain_card.click()
++
++        # 6. Verify Library closed and state updated
++        print("Verifying update...")
++        library_header.wait_for(state="hidden")
++        print("Library closed.")
++        
++        # Check new title in MixerBoard
++        new_title = page.locator("h3").filter(has_text="Neon Rain").first
++        new_title.wait_for(state="visible")
++        print("New mix title 'Neon Rain' visible.")
++        
++        time.sleep(2) # Wait for background transition
++
++        # 7. Take screenshot of updated state
++        print("Taking updated state screenshot...")
++        page.screenshot(path="verification_updated.png")
++
++        browser.close()
++        print("Verification complete.")
++
++if __name__ == "__main__":
++    verify_mix_library()
