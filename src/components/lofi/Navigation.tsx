@@ -1,16 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useLofiStore } from '../../store/lofiStore';
 
 const Navigation: React.FC = () => {
-  const timer = useLofiStore((state) => state.timer);
+  const initialTimer = useLofiStore((state) => state.initialTimer);
   
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${s.toString().padStart(2, '0')}`;
-  };
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-16 flex items-center justify-between px-8 bg-gradient-to-b from-black/50 to-transparent pointer-events-none">
       <div className="flex items-center gap-3 pointer-events-auto">
@@ -18,12 +11,9 @@ const Navigation: React.FC = () => {
         <span className="text-amber-50 font-bold text-lg tracking-wide uppercase drop-shadow-md font-display">LofiLoom</span>
       </div>
       <div className="flex items-center gap-6 pointer-events-auto">
-        <Link to="/legacy" className="text-amber-100/60 hover:text-amber-50 text-sm font-medium transition-colors font-display">
-            Legacy App
-        </Link>
         <div className="hidden md:flex items-center gap-2 text-amber-100/80 text-xs font-medium bg-amber-950/30 px-4 py-2 rounded-full border border-amber-500/20 backdrop-blur-md">
           <span className="material-symbols-outlined text-primary text-base">timer</span>
-          <span className="font-numeric tabular-nums">{formatTime(timer)}</span>
+          <span className="font-display">Session: <span className="font-numeric">{Math.floor(initialTimer / 60)}m</span></span>
         </div>
         <div className="flex items-center gap-3 cursor-pointer group">
           <div className="size-8 rounded-full border border-amber-200/30 overflow-hidden shadow-[0_0_10px_rgba(255,160,0,0.3)]">

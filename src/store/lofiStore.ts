@@ -57,7 +57,7 @@ export const useLofiStore = create<LofiState>((set) => ({
       muted: false, 
       src: 'https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg',
       icon: 'storefront', 
-      accentColor: 'accent-orange-400' 
+      accentColor: 'accent-orange-300' 
     },
     { 
       id: 'fire', 
@@ -66,7 +66,7 @@ export const useLofiStore = create<LofiState>((set) => ({
       muted: false, 
       src: 'https://actions.google.com/sounds/v1/ambiences/fireplace.ogg',
       icon: 'local_fire_department', 
-      accentColor: 'accent-red-400' 
+      accentColor: 'accent-amber-500' 
     },
     { 
       id: 'vinyl', 
@@ -75,7 +75,7 @@ export const useLofiStore = create<LofiState>((set) => ({
       muted: false, 
       src: 'https://actions.google.com/sounds/v1/water/waves_crashing_on_rocks_1.ogg',
       icon: 'album', 
-      accentColor: 'accent-yellow-300' 
+      accentColor: 'accent-amber-400' 
     },
     { 
       id: 'nature', 
@@ -84,7 +84,7 @@ export const useLofiStore = create<LofiState>((set) => ({
       muted: false, 
       src: 'https://actions.google.com/sounds/v1/animals/birds_forest.ogg',
       icon: 'forest', 
-      accentColor: 'accent-lime-400' 
+      accentColor: 'accent-orange-300' 
     },
   ],
 

@@ -9,7 +9,8 @@
   --color-panel-bg: #0a0a12;
   --color-panel-border: #1a1a2e;
 
-  --font-display: "Rajdhani", sans-serif;
+  --font-display: "DM Sans", sans-serif;
+  --font-numeric: "Outfit", sans-serif;
   --font-mono: "Space Mono", monospace;
 
   --background-image-cyber-grid: linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
