@@ -78,6 +78,27 @@
     animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
     color: #00f0ff;
   }
+  
+  /* LofiLoom Utilities */
+  .glass-panel {
+    @apply bg-stone-800/30 backdrop-blur-xl border border-stone-700/30 shadow-lg;
+  }
+  .glass-panel-deep {
+    @apply bg-stone-900/60 backdrop-blur-2xl border-t border-stone-700/30;
+  }
+  .text-glow {
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  }
+  .glow-ring {
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4));
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes glitch {
